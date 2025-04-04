@@ -66,4 +66,4 @@ Conclusion
 
 The project represents an interesting and ambitious initiative for the automatic analysis of vulnerabilities in Solana smart contracts. Although its basic architecture is sound, there is room for improvement both in the machine learning-based analysis and in the use of regular expressions. As the project evolves, a focus on deeper syntactic analysis and richer feature extraction could significantly enhance the tool's accuracy and utility.
 
-If you need specific guidance or further discussion on individual parts of the project, we can delve into additional details and potential improvements.
+
