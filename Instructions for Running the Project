@@ -1,0 +1,46 @@
+Instructions for Running the Project
+Prerequisites
+Python 3.7 or Newer: Ensure that you have Python installed.
+
+Required Libraries: Install all dependencies using pip. You can use the provided requirements.txt file, which includes:
+
+Flask
+
+Flask-CORS
+
+TensorFlow/Keras
+
+NumPy
+
+Pandas (if you are using the script for extracting functions from Rust files)
+
+
+Project Structure
+The project should contain the following files:
+
+app.py – The main Flask server that loads the AI model and handles incoming requests.
+
+web_interface.html – The web interface for inputting Rust/Anchor code and displaying the analysis results.
+
+extract_sol_fns.py – A script that traverses the solana-projects directory to extract public functions from Rust files.
+
+mark_vulnerabilities.py – A script that uses regular expressions to analyze the code for vulnerabilities.
+
+Model File: The file solana_ai_model_v2.keras must be placed in the same directory as app.py so that it can be loaded correctly.
+
+(Optional) solana-projects Directory: This directory should exist in your home folder and contain Rust files if you plan to use the functionality for extracting public functions.
+
+Open PowerShell/Terminal: Navigate to the project directory.
+
+Start the Server: Run the following command: python app.py
+
+
+Using the Web Interface
+Open Your Browser: Launch your preferred web browser.
+
+Access the Interface: In the browser's address bar, navigate to:
+
+
+Usage: Paste your Rust/Anchor code into the text area provided and click the Analyze button. The application will process the code using the AI model and regex checks, then display the results directly in your browser.
+
+
